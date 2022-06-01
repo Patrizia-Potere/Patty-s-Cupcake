@@ -1,0 +1,298 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="./style.css"/>
+    <link href="https://fonts.googleapis.com/css2?family=Cookie&family=Dancing+Script&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/1852d70605.js" crossorigin="'anonymous"></script>
+    <title>Patty's Cupcake</title>
+    <link rel="icon" type="image/x-icon" href="./images/favicon.ico"/>
+</head>
+<body>
+<!------------------------------------Header & Navigation Bar ------------------->
+
+    <header id="header">
+        <div class="flex-header">
+            <h1>Patty' s Cupcake</h1>
+        </div>
+        <div class="flex-header">
+            <p>Phone : <span>+44 0207 123 4567</span></p>
+            <p>Email : info@pattyscupcake.co.uk</p>
+        </div>
+    </header>
+    <nav id="navbar">
+        <ul>
+            <li><a href="#home">Home</a></li>
+            <li><a href="#cupcake">Cupcake</a></li>
+            <li><a href="#delivery">Order</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#info">Info</a></li>
+        </ul>
+    </nav>
+    <img src="./images/clipart1.jpg" alt="cupcake" width="100%">
+
+<!---------------------------------Cupcake Selection Choice-------------------------->
+
+    <section id="cupcake">
+        <div class="title">
+            <h1>Pick one</h1>
+        </div>
+        <div id="cup_choice">
+            <div class="flex_choice">
+                <div class="flip-box">
+                    <div class="flip-box-inner">
+                        <div class="flip-box-front">
+                            <img src="./images/oreo.jpg" alt="oreo">
+                        </div>
+                        <div class="flip-box-back">
+                            <h2>Oreo</h2>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="flex_choice">
+                <div class="flip-box">
+                    <div class="flip-box-inner">
+                        <div class="flip-box-front">
+                            <img src="./images/rocher.jpg" alt="rocher">
+                        </div>
+                        <div class="flip-box-back">
+                            <h2>Rocher</h2>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="flex_choice">
+                <div class="flip-box">
+                    <div class="flip-box-inner">
+                        <div class="flip-box-front">
+                            <img src="./images/vanilla.jpg" alt="vanilla">
+                        </div>
+                        <div class="flip-box-back">
+                            <h2>Vanilla</h2>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="flex_choice">
+                <div class="flip-box">
+                    <div class="flip-box-inner">
+                        <div class="flip-box-front">
+                            <img src="./images/velvet.webp" alt="velvet">
+                        </div>
+                        <div class="flip-box-back">
+                            <h2>Red Velvet</h2>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="flex_choice">
+                <div class="flip-box">
+                    <div class="flip-box-inner">
+                        <div class="flip-box-front">
+                            <img src="./images/strawberry.jpg" alt="strawberry">
+                        </div>
+                        <div class="flip-box-back">
+                            <h2>Strawberry</h2>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="flex_choice">
+                <div class="flip-box">
+                    <div class="flip-box-inner">
+                        <div class="flip-box-front">
+                            <img src="./images/blueberry.png" alt="blueberry">
+                        </div>
+                        <div class="flip-box-back">
+                            <h2>Blueberry</h2>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+<!---------------------------------Order Section--------------------------------->
+
+    <section id="delivery">
+        <div class="title">
+            <h1>Place your Order</h1>
+        </div>
+        <div id="order">
+        <form action="order.html" method="get">
+            <div id="user">                             <!--User Detail Input-->
+                <label for="name">Name</label>
+                <input type="text" id="name" name="Name" placeholder="Name" required><br>
+                <label for="email">Email</label>
+                <input type="email" id="email" name="Email" placeholder="Email" required><br>
+                <label for="address">Address</label>
+                <input type="text" id="address" name="address" placeholder="Address" required><br>
+                <label for="tel">Tel</label>
+                <input type="tel" id="tel" name="Phone Number" placeholder="Phone Number" required><br>
+                <label for="area">Requests</label>
+                <textarea id="area" name="Request" rows="5" cols="35">Let us know...</textarea>
+            </div>
+            <div id="order-list">                   <!---------Choosing List for Order------->
+                <ul>                                
+                    <li><label for="oreo">Oreo</label>
+                        <input type="number" id="oreo" name="Oreo" min="0" max="6" placeholder="0"></li>
+                    <li><label for="rocher">Rocher</label>
+                        <input type="number" id="rocher" name="Rocher" min="0" max="6" placeholder="0"></li>
+                    <li><label for="vanilla">Vanilla</label>
+                        <input type="number" id="vanilla" name="Vanilla" min="0" max="6" placeholder="0"></li>
+                    <li><label for="velvet">Velvet</label>
+                        <input type="number" id="velvet" name="Red Velvet" min="0" max="6" placeholder="0"></li>
+                    <li><label for="straw">Strawberry</label>
+                        <input type="number" id="straw" name="Strawberry" min="0" max="6" placeholder="0"></li>
+                    <li><label for="blue">Blueberry</label>
+                        <input type="number" id="blue" name="Blueberry" min="0" max="6" placeholder="0"></li>
+                </ul>
+            </div>
+            <div id="option">                       <!-----Free From Option Checkbox-------->
+                <h3>Vegan & Gluten Free Option </h3>
+                <label for="vegan">Vegan</label>
+                <input type="checkbox" id="vegan" name="option1" value=vegan/>
+                <label for="gluten">Gluten Free</label>
+                <input type="checkbox" id="gluten" name="option2" value=gluten_free/>
+            </div>
+            <div id="order-btn">                <!--Button Area for Submit or Reset-->
+                <button class=btn type="reset">Reset</button>
+                <button class="btn" type="submit">Submit</button>
+            </div>
+        </form>
+        </div>
+    </section>
+
+<!----------------------------------------About us--------------------------------->
+
+    <section id= "about">
+        <div id="container">
+            <img src="./images/ourstory.jpg" alt="ourstory" width="100%" height="auto"/>
+            <article id="center">
+                <h1>Our Story</h1>
+                <p> Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor 
+                    incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis 
+                    nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. 
+                    Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore 
+                    eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, 
+                    sunt in culpa qui officia deserunt mollit anim id est laborum.
+                </p>
+            </article>
+        </div>    
+    </section>
+   
+<!-------------------------------------Nutritional Info------------------------------>
+    <section id="info">
+        <div class="title">
+            <h1>Recipes & Nutritional Info</h1>
+        </div>
+        <div id="info_container">
+            <div id="recipe">
+                <h2>Ingredients</h2>
+                <h3>For the cupcake</h3>       <!-----------Normal Recipe---------->
+                <ul>
+                    <li>250g unsalted butter, softened</li>
+                    <li>250g caster sugar</li>
+                    <li>250g self-raising flour</li>
+                    <li>4 medium <span>eggs</span></li>
+                    <li>4 tablespoons <span>milk</span></li>
+                    <li>Pinch of salt (optional)</li>
+                </ul>
+                <h3>For the buttercream</h3>
+                <ul>
+                    <li>200 g butter block softened, </li>
+                    <li>400 g Icing sugar</li>
+                    <li>1 ½ tsp Vanilla extract</li>
+                    <li>1-2 tbsp <span>Milk</span></li>
+                </ul>
+            </div>
+            <div id="vegan">   
+                <h2>Vegan Recipe</h2>       
+                <h3>For the cupcake</h3>           <!--------Vegan Recipe-------->
+                <ul>
+                    <li>75 ml Vegetable oil</li>
+                    <li>225 ml Dairy free milk</li>
+                    <li>1 tsp Cider vinegar</li>
+                    <li>1 ½ tsp Vanilla extract</li>
+                    <li>150 g Caster sugar</li>
+                    <li>250 g Self raising flour</li>
+                    <li>1 tsp Baking powder</li>
+                </ul>
+                
+            </div>
+            <div id="energy">
+                <table>                      <!----------Nutritional Info Table--------->
+                    <tr>
+                        <th></th>
+                        <th>Per item</th>
+                        <th>Per 100g</th>
+                    </tr>
+                    <tr>
+                        <td>Energy (Kj)</td>
+                        <td>1581.2</td>
+                        <td>1491.7</td>
+                    </tr>
+                    <tr>
+                        <td>Energy (KCal)</td>
+                        <td>378.2</td>
+                        <td>356.8</td>
+                    </tr>
+                        <td>Fat (g)</td>
+                        <td>22.8</td>
+                        <td>21.5</td>
+                    </tr>
+                    <tr>		
+                        <td>of which Saturates (g)</td>
+                        <td>9.7</td>
+                        <td>9.1</td>
+                    </tr>
+                    <tr>		
+                        <td>Carbohydrate (g)</td>
+                        <td>39.6</td>
+                        <td>37.4</td>
+                    </tr>
+                    <tr>		
+                        <td>of which Sugars (g)</td>
+                        <td>30</td>
+                        <td>28.3</td>
+                    </tr>
+                    <tr>		
+                        <td>Protein (g)</td>
+                        <td>4.8</td>
+                        <td>4.5</td>
+                    </tr>
+                    <tr>		
+                        <td>Salt (g)</td>
+                        <td>0.5</td>
+                        <td>0.5</td>
+                    </tr>
+                    <tr>
+                        <td>Fibre (g)</td>
+                        <td>1</td>
+                        <td>0.9</td>
+                    </tr>
+                </table>
+            </div>
+        </div>
+        <div id="replace">                           <!--------Replacement Option-------->
+            <p>* For <span>Vegan</span> we replace with <span>Dairy free butter</span> and <span>Almond milk</span> *</p>
+            <p>* For Gluten Free cupcake we replace with <span>Gluten Free Flour</span> *</p>
+        </div>
+    </section>
+    
+<!-----------------------------------Cpoyright and Social Media Link------------------>
+
+        <footer id="footer">
+            <div id="footer_left">Copyright & copy ; 2022 Patty's Cupcake website</div>
+            <div id="footer_right">
+                <a href=""><i class="fa brands fa-facebook-square"></i></a>
+                <a href=""><i class="fa brands fa-instagram"></i></a>
+                <a href=""><i class="fa brands fa-twitter"></i></a>
+            </div>
+        </footer>
+
+</body>
+</html>
